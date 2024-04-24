@@ -11,3 +11,10 @@ export interface Product {
   hasReviews?: boolean;
   reviews?: Review[];
 }
+
+// SHOULD BE REMOVED TO UTILITIES FOLDER
+// GENERIC
+export interface Result<T> { // T represents ANY type
+  data: T | undefined;
+  error?: string;
+}
